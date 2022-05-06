@@ -1,0 +1,23 @@
+.create-message-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.message-container-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  .message-container-col {
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+      background-color: aqua;
+      border: 1px solid black;
+      text-align: center;
+    }
+  }
+}
