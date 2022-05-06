@@ -40,25 +40,26 @@ function CreateMessage() {
   return (
     <div className="row create-message-row">
       <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <Form>
+        <h3 className="text-center">Create a new message</h3>
+        <Form className="text-center">
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Title</Form.Label>
             <Form.Control
               type="text"
+              placeholder="Title"
               onChange={(e) => setTitle(e.target.value)}
               required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Message</Form.Label>
             <Form.Control
               as="textarea"
+              placeholder="Message"
               rows={3}
               onChange={(e) => setBody(e.target.value)}
               required
             />
           </Form.Group>
-          <Button variant="primary" type="submit" onClick={handlePost}>
+          <Button variant="secondary" type="submit" onClick={handlePost}>
             Submit
           </Button>
         </Form>

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
 // import MessageContainer from './MessageContainer';
-import Message from './Message';
-// import Messages from './Messages';
+// import Message from './Message';
+import Messages from './Messages';
 
 function Main() {
   // eslint-disable-next-line no-unused-vars
@@ -46,7 +46,7 @@ function Main() {
           exact
           path="/messages/:messageId"
           element={
-            <Message
+            <Messages
               messages={messages}
               setMessages={setMessages}
               loading={loading}
