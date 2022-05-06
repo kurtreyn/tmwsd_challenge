@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 2000;
+const messagesRoute = require('./routes/messages');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv/config');
-
-const messagesRoute = require('./routes/messages');
 
 // CONNECT TO ONLINE DATABASE
 const connect = mongoose.connect(process.env.DB_CONNECTION, {

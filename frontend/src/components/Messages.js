@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Message from './Message';
 
 function Messages({ messages }) {
-  return messages.map((item) => {
+  const [messageId, setMessageId] = useState('');
+  const [messageBody, setMessageBody] = useState('');
+  //   const navigate = useNavigate();
+
+  return messages.map((message, i) => {
     return (
-      <div
-        className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 message-container-col"
-        key={item.id}
-      >
-        <div className="row">
-          <h1>{item.title}</h1>
-        </div>
-        <div className="row">
-          <p>{item.body}</p>
+      <div className="row message-container-row" key={message.id}>
+        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 message-container-col">
+          <div className="row">
+            <Link to={`/messages/${message._id}`} state={{ id: message._id }}>
+              <h1>{message.title}</h1>
+            </Link>
+          </div>
         </div>
       </div>
     );
