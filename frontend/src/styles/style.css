@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Radio+Canada:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.page-container .header-row {
+  margin-top: 1rem;
+}
+
+.page-container .header-row .header-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-container .header-row .header-col h1 {
+  border: solid 1px black;
+  padding: 4rem;
+  font-family: 'Bangers', cursive;
+  color: #e76f51;
+}
+
+.page-container .create-message-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.page-container .create-message-row h3 {
+  font-family: 'Bangers', cursive;
+  color: #264653;
+}
+
+.page-container .message-container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.page-container .message-container-row .message-container-col {
+  padding: 2px;
+  margin: 0.2rem;
+}
+
+.page-container .message-container-row .message-container-col h2 {
+  font-size: 1.5rem;
+  background-color: #e9c46a;
+  border: 1px solid black;
+  text-align: center;
+  color: #e76f51;
+}
+
+.page-container .message-container-row .message-container-col a {
+  text-decoration: none;
+}
+
+.secret-message-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.secret-message-row .secret-message-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+}
+
+.go-home-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.go-home-row .go-home-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

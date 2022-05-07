@@ -1,0 +1,5 @@
+.DS_Store
+**/node_modules
+node_modules
+/frontend/node_modules
+tmwsd_challenge/frontend/node_modules
