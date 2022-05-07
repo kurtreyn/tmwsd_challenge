@@ -17,16 +17,25 @@ connect.then(
 app.use(
   cors({
     origin: '*',
-    methods: ['GET', 'POST', 'DELTE', 'UPDATE', 'PUT'],
+    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
   })
 );
-app.use((req, res, next) => {
-  res.header({
-    'Access-Control-Allow-Origin': 'http://localhost:3000',
-    'Access-Control-Allow-Methods': ['GET', 'POST', 'DELETE'],
-  });
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  );
   next();
 });
+// app.use((req, res, next) => {
+//   res.header({
+//     'Access-Control-Allow-Origin': 'http://localhost:3000',
+//     'Access-Control-Allow-Methods': ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
+//   });
+//   next();
+// });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

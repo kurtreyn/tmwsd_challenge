@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
-// import MessageContainer from './MessageContainer';
-// import Message from './Message';
-import Messages from './Messages';
+import Message from './Message';
 
 function Main() {
   // eslint-disable-next-line no-unused-vars
@@ -26,7 +24,7 @@ function Main() {
     fetchMessages();
   }, [messages.length]);
 
-  console.log(messages);
+  // console.log(messages);
   return (
     <div>
       <Routes>
@@ -39,6 +37,7 @@ function Main() {
               setMessages={setMessages}
               loading={loading}
               setLoading={setLoading}
+              fetchMessages={fetchMessages}
             />
           }
         />
@@ -46,7 +45,7 @@ function Main() {
           exact
           path="/messages/:messageId"
           element={
-            <Messages
+            <Message
               messages={messages}
               setMessages={setMessages}
               loading={loading}

@@ -8,8 +8,8 @@ The goal here is to create a simple web application that allows someone to creat
 
 Fork this repository, clone it, install dependencies, and run it.
 
-``` bash
-git clone {{your_fork_url_here}}
+```bash
+git clone {{https://github.com/kurtreyn/tmwsd_challenge.git}}
 npm install
 node app.js
 ```

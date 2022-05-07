@@ -63,5 +63,16 @@ body {
   .secret-message-col {
     display: flex;
     justify-content: center;
+    border: 1px solid black;
+  }
+}
+
+.go-home-row {
+  display: flex;
+  justify-content: center;
+
+  .go-home-col {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -1,11 +1,14 @@
-import React from 'react';
-// import Messages from './Messages';
+import React, { useEffect } from 'react';
 import CreateMessage from './CreateMessage';
 import LoadingScreen from './LoadingScreen';
 import MessageContainer from './MessageContainer';
 import Header from './Header';
 
-function HomePage({ messages, setMessages, loading, setLoading }) {
+function HomePage({ messages, fetchMessages, loading }) {
+  useEffect(() => {
+    fetchMessages();
+  }, []);
+
   return (
     <div className="container-fluid page-container">
       <Header />

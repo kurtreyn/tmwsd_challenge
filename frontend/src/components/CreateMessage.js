@@ -24,13 +24,7 @@ function CreateMessage() {
     };
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:2000/new', requestOptions);
-      if (response.status === 200) {
-        alert('Message created successfully');
-      } else {
-        alert(response.statusText);
-      }
-      console.log(response);
+      await fetch('http://localhost:2000/new', requestOptions);
     } catch (errors) {
       console.log(errors);
       alert(errors.message);
